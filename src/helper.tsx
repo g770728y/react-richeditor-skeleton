@@ -65,18 +65,15 @@ export function renderButton({
   return function renderButton(editor: CoreEditor) {
     const isActive = hasMark(editor, type);
     const IconClass = icon;
-    return {
-      index: 0,
-      ui: (
-        <>
-          <IconButton
-            active={isActive}
-            onMouseDown={event => onClickMark(editor, event, type)}
-          >
-            <IconClass />
-          </IconButton>
-        </>
-      )
-    };
+    return (
+      <>
+        <IconButton
+          active={isActive}
+          onMouseDown={event => onClickMark(editor, event, type)}
+        >
+          <IconClass />
+        </IconButton>
+      </>
+    );
   };
 }

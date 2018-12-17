@@ -1,8 +1,3 @@
-import React from 'react';
-import { Editor as CoreEditor } from 'slate';
-import { isKeyHotkey } from 'is-hotkey';
-import { RenderMarkProps } from 'slate-react';
-import { IconButton } from '../../components/Button';
 import { BoldIcon } from '../../components/Icon';
 import { onKeyDown, renderMark, renderButton } from '../../helper';
 
