@@ -1,5 +1,6 @@
 {
   "name": "example",
+  "homepage": "https://g770728y.github.io/react-richeditor-skeleton",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
