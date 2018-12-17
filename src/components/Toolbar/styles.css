@@ -1,0 +1,9 @@
+.container {
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  padding: 5px 13px;
+  border: 1px solid #ebebeb;
+  border-bottom: 0;
+  box-sizing: border-box;
+}

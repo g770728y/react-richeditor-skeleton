@@ -1,0 +1,23 @@
+.icon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 26px;
+  margin: 0 2px;
+  white-space: nowarp;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0;
+  color: #8590a6;
+  box-sizing: border-box;
+}
+
+.icon-button:hover {
+  border-color: #ebebeb;
+  background-color: #f6f6f6;
+}
+
+.icon-button-actived {
+  color: #0084ff;
+}
