@@ -1,5 +1,5 @@
 import { BoldIcon } from '../../components/Icon';
-import { onKeyDown, renderMark, renderButton } from '../../helper';
+import { onKeyDown, renderMark, renderMarkButton } from '../../helpers/mark';
 
 const TYPE = 'bold';
 
@@ -9,7 +9,7 @@ function BoldPlugin(options = {}) {
 
     renderMark: renderMark({ type: TYPE, tagName: 'strong' }),
 
-    renderButton: renderButton({ type: TYPE, icon: BoldIcon })
+    renderButton: renderMarkButton({ type: TYPE, icon: BoldIcon })
   };
 }
 

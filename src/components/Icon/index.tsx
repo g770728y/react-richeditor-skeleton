@@ -33,7 +33,7 @@ const ItalicIcon: SFC = () => (
   <Icon d="M15.751 5h-5.502a.751.751 0 0 0-.749.75c0 .417.336.75.749.75H12l-2 11H8.249a.751.751 0 0 0-.749.75c0 .417.336.75.749.75h5.502a.751.751 0 0 0 .749-.75.748.748 0 0 0-.749-.75H12l2-11h1.751a.751.751 0 0 0 .749-.75.748.748 0 0 0-.749-.75" />
 );
 
-const HeaderIcon: SFC = () => (
+const HeadingIcon: SFC = () => (
   <Icon d="M7 6.007C7 5.45 7.444 5 8 5c.552 0 1 .45 1 1.007v11.986C9 18.55 8.556 19 8 19c-.552 0-1-.45-1-1.007V6.007zm8 0C15 5.45 15.444 5 16 5c.552 0 1 .45 1 1.007v11.986C17 18.55 16.556 19 16 19c-.552 0-1-.45-1-1.007V6.007zM9 11h6v2H9v-2z" />
 );
 
@@ -73,7 +73,7 @@ export default Icon;
 export {
   BoldIcon,
   ItalicIcon,
-  HeaderIcon,
+  HeadingIcon,
   QuoteIcon,
   OrderListIcon,
   UnorderedListIcon,

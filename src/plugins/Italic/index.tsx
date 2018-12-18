@@ -1,4 +1,4 @@
-import { onKeyDown, renderButton, renderMark } from '../../helper';
+import { onKeyDown, renderMarkButton, renderMark } from '../../helpers/mark';
 import { ItalicIcon } from '../../components/Icon';
 
 const TYPE = 'italic';
@@ -9,7 +9,7 @@ function ItalicPlugin(options = {}) {
 
     renderMark: renderMark({ type: TYPE, tagName: 'em' }),
 
-    renderButton: renderButton({ type: TYPE, icon: ItalicIcon })
+    renderButton: renderMarkButton({ type: TYPE, icon: ItalicIcon })
   };
 }
 

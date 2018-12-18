@@ -2,8 +2,21 @@ import React from 'react';
 import { Editor as CoreEditor } from 'slate';
 import { isKeyHotkey } from 'is-hotkey';
 import { RenderMarkProps } from 'slate-react';
-import { IconButton } from './components/Button';
-import { BoldIcon } from './components/Icon';
+import { IconButton } from '../components/Button';
+
+const hasMark = (editor: CoreEditor, type: string) => {
+  const { value } = editor;
+  return value.activeMarks.some(mark => mark!.type === type);
+};
+
+const onClickMark = (
+  editor: CoreEditor,
+  event: React.MouseEvent,
+  type: string
+) => {
+  event.preventDefault();
+  editor.toggleMark(type);
+};
 
 export function onKeyDown({ type, hotkey }: { type: string; hotkey: string }) {
   return function _onKeyDown(
@@ -41,21 +54,7 @@ export function renderMark({
   };
 }
 
-const hasMark = (editor: CoreEditor, type: string) => {
-  const { value } = editor;
-  return value.activeMarks.some(mark => mark!.type === type);
-};
-
-const onClickMark = (
-  editor: CoreEditor,
-  event: React.MouseEvent,
-  type: string
-) => {
-  event.preventDefault();
-  editor.toggleMark(type);
-};
-
-export function renderButton({
+export function renderMarkButton({
   type,
   icon
 }: {

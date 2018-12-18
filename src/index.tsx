@@ -8,6 +8,11 @@ import BoldPlugin from './plugins/Bold';
 import { pick } from './components/utils';
 import ItalicPlugin from './plugins/Italic';
 import _initialValue from './initialValue';
+import HeadingPlugin from './plugins/Heading';
+import BlockQuotePlugin from './plugins/Quote.tsx';
+import OrderedListPlugin from './plugins/OrderedList';
+import UnorderedListPlugin from './plugins/UnorderedList';
+import LinkPlugin from './plugins/Link';
 
 const initialValue = Value.fromJSON(_initialValue);
 
@@ -17,7 +22,15 @@ interface IState {
 
 type IProps = {} & React.HTMLAttributes<any>;
 
-const _plugins = [BoldPlugin(), ItalicPlugin()];
+const _plugins = [
+  BoldPlugin(),
+  ItalicPlugin(),
+  HeadingPlugin(),
+  BlockQuotePlugin(),
+  OrderedListPlugin(),
+  UnorderedListPlugin(),
+  LinkPlugin()
+];
 const plugins = _plugins.map(({ renderButton, ...rest }) => rest);
 
 export default class RichEditor extends React.Component<IProps, IState> {
@@ -35,6 +48,7 @@ export default class RichEditor extends React.Component<IProps, IState> {
         <React.Fragment key={index}>{renderButton!(editor)}</React.Fragment>
       );
     });
+    console.log(buttons);
     return (
       <>
         {children}
