@@ -1,0 +1,49 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.panel {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.row {
+  margin-bottom: 8px;
+  height: 30px;
+  display: flex;
+  align-items: stretch;
+}
+
+.label {
+  width: 30px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.input {
+  width: 200px;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.input input {
+  line-height: 28px;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+  flex-grow: 1;
+}

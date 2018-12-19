@@ -38,6 +38,7 @@ export default class RichEditor extends React.Component<IProps, IState> {
 
   onChange = ({ value }: { value: Value }) => {
     this.setState({ value });
+    console.log('newValue:', JSON.stringify(value.toJSON()));
   };
 
   renderEditor = (props: EditorProps, editor: CoreEditor, next: () => any) => {
@@ -48,7 +49,6 @@ export default class RichEditor extends React.Component<IProps, IState> {
         <React.Fragment key={index}>{renderButton!(editor)}</React.Fragment>
       );
     });
-    console.log(buttons);
     return (
       <>
         {children}
