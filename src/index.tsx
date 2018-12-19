@@ -13,6 +13,7 @@ import BlockQuotePlugin from './plugins/Quote.tsx';
 import OrderedListPlugin from './plugins/OrderedList';
 import UnorderedListPlugin from './plugins/UnorderedList';
 import LinkPlugin from './plugins/Link';
+import ImagePlugin from './plugins/Image';
 
 const initialValue = Value.fromJSON(_initialValue);
 
@@ -29,7 +30,8 @@ const _plugins = [
   BlockQuotePlugin(),
   OrderedListPlugin(),
   UnorderedListPlugin(),
-  LinkPlugin()
+  LinkPlugin(),
+  ImagePlugin()
 ];
 const plugins = _plugins.map(({ renderButton, ...rest }) => rest);
 

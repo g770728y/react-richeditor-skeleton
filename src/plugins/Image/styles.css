@@ -1,0 +1,41 @@
+.image {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+.circleButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #666;
+  color: #fff;
+
+  box-sizing: border-box;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+
+  cursor: pointer;
+
+  /* 调整x的位置 */
+  padding-bottom: 2px;
+}
+
+.circleButton:hover {
+  background: #333;
+}
+
+.customImageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.customImageContainer:hover .circleButton {
+  display: flex;
+}
