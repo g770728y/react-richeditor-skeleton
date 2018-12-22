@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react-richeditor-skeleton/precache-manifest.12a4ec1e387af0f589cedd8f848d1418.js"
+  "/react-richeditor-skeleton/precache-manifest.4543205cded499d2f1d79a73e709b04a.js"
 );
 
 workbox.clientsClaim();
