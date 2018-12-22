@@ -25,7 +25,6 @@
     "immutable": "^4.0.0-rc.12",
     "is-hotkey": "0.1.4",
     "is-url": "^1.2.4",
-    "react-icons": "3.2.2",
     "slate": "^0.44.9",
     "slate-react": "0.20.3"
   },
