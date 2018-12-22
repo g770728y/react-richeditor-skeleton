@@ -9,3 +9,8 @@
 input:focus {
   outline: none;
 }
+
+button,
+button:focus {
+  outline: none;
+}

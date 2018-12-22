@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeadingIcon } from '../../components/Icon';
-import { renderNode, renderNodeButton } from '../../helpers/node';
+import { renderNode, renderNodeButton } from '../../helpers/block';
 
 const TYPE = 'heading';
 

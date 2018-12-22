@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { renderNodeButton, renderNode } from '../../helpers/node';
+import { renderNodeButton, renderNode } from '../../helpers/block';
 import { QuoteIcon } from '../../components/Icon';
 
 const TYPE = 'block-quote';

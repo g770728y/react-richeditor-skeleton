@@ -1,7 +1,8 @@
 .container {
   position: absolute;
+  left: -1px;
   bottom: 100%;
-  width: 100%;
+  width: calc(100% + 2px);
   padding: 5px 13px;
   border: 1px solid #ebebeb;
   border-bottom: 0;

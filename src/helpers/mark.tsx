@@ -35,19 +35,25 @@ export function onKeyDown({ type, hotkey }: { type: string; hotkey: string }) {
 
 export function renderMark({
   type,
-  tagName
+  tagName,
+  attributes
 }: {
   type: string;
   tagName: string;
+  attributes?: any;
 }) {
   return function _renderMark(
     props: RenderMarkProps,
     editor: CoreEditor,
     next: () => any
   ) {
-    const { children, mark, attributes } = props;
+    const { children, mark } = props;
     if (mark.type === type) {
-      return React.createElement(tagName, attributes, children);
+      return React.createElement(
+        tagName,
+        { ...props.attributes, ...attributes },
+        children
+      );
     } else {
       return next();
     }

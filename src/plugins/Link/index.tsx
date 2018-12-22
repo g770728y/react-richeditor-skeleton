@@ -58,7 +58,7 @@ function LinkPlugin(option?: {}) {
 
     renderEditor(props: EditorProps, editor: CoreEditor, next: () => any) {
       const { value } = editor;
-      const { fragment, selection } = value;
+      const { selection } = value;
       let styles: React.CSSProperties;
       const linkNode = getLinks(editor);
       let hrefValue: string = '';

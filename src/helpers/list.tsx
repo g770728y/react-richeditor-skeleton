@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { hasBlock } from './node';
+import { hasBlock } from './block';
 import { Editor as CoreEditor, Block } from 'slate';
 import { IconButton } from '../components/Button';
 import { DEFAULT_NODE } from '../constants';
-export { renderNode as renderList } from './node';
+export { renderNode as renderList } from './block';
 
 const onClickList = (
   editor: CoreEditor,
