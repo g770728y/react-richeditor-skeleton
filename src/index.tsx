@@ -29,6 +29,8 @@ type IProps = {
       keyword: string,
       onSelect: (data: User) => void
     ) => React.ReactNode;
+
+    onSaveImage?: (dataurl: string) => Promise<string>;
   };
 } & React.HTMLAttributes<any>;
 
@@ -55,7 +57,7 @@ export default class RichEditor extends React.Component<IProps, IState> {
       OrderedListPlugin(),
       UnorderedListPlugin(),
       LinkPlugin(),
-      ImagePlugin()
+      ImagePlugin({ onSave: (children || {}).onSaveImage })
     ];
 
     children &&

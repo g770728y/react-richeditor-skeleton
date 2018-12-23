@@ -6,6 +6,8 @@ import { insertImage } from './helper';
 
 type IProps = {
   editor: CoreEditor;
+  // 返回http url
+  onSave?: (dataUrl: string) => Promise<string>;
 };
 
 class ImageButton extends React.Component<IProps, {}> {
@@ -25,9 +27,15 @@ class ImageButton extends React.Component<IProps, {}> {
 
     reader.onload = function(e: any) {
       const dataurl = e.target.result;
-      const { editor } = self.props;
+      const { editor, onSave } = self.props;
 
-      insertImage(editor, dataurl);
+      if (onSave) {
+        onSave(dataurl).then(httpurl => {
+          insertImage(editor, httpurl);
+        });
+      } else {
+        insertImage(editor, dataurl);
+      }
     };
 
     reader.readAsDataURL(file);

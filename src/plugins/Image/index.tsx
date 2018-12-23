@@ -5,7 +5,11 @@ import ImageButton from './ImageButton';
 import { TYPE } from './helper';
 import CustomImage from './CustomImage';
 
-function ImagePlugin(options?: {}) {
+interface Option {
+  onSave?: (dataurl: string) => Promise<string>;
+}
+
+function ImagePlugin(options?: Option) {
   return {
     renderNode(props: RenderNodeProps, editor: CoreEditor, next: () => any) {
       const { attributes, node, isFocused } = props;
@@ -25,7 +29,8 @@ function ImagePlugin(options?: {}) {
     },
 
     renderButton(editor: CoreEditor) {
-      return <ImageButton editor={editor} />;
+      const { onSave } = options || ({} as Option);
+      return <ImageButton editor={editor} onSave={onSave} />;
     },
 
     schema: {
