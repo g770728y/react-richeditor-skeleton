@@ -6,7 +6,10 @@ const TYPE = 'block-quote';
 
 function BlockQuotePlugin(options = {}) {
   return {
-    renderNode: renderNode({ type: TYPE, tagName: 'blockquote' }),
+    renderNode: renderNode({
+      type: TYPE,
+      tagName: 'blockquote'
+    }),
     renderButton: renderNodeButton({ type: TYPE, icon: QuoteIcon })
   };
 }

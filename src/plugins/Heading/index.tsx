@@ -6,7 +6,11 @@ const TYPE = 'heading';
 
 function HeadingPlugin(options = {}) {
   return {
-    renderNode: renderNode({ type: TYPE, tagName: 'h1' }),
+    renderNode: renderNode({
+      type: TYPE,
+      tagName: 'h1',
+      attributes: { className: 'heading' }
+    }),
     renderButton: renderNodeButton({ type: TYPE, icon: HeadingIcon })
   };
 }

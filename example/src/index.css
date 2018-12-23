@@ -13,9 +13,43 @@ code {
     monospace;
 }
 
-blockquote {
+.richeditor blockquote {
   margin: 1em 0;
   padding-left: 1em;
   color: #646464;
   border-left: 3px solid #d3d3d3;
+}
+
+.richeditor .heading {
+  margin-top: calc(2em / 1.2);
+  margin-bottom: calc(1em / 1.2);
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.richeditor .block {
+  margin: 0 0 0.8em 0;
+  line-height: 1.5;
+  position: relative;
+}
+
+.richeditor ol,
+.richeditor ul {
+  padding: 0;
+  margin: 1em 0;
+}
+
+.richeditor a {
+  text-decoration: none;
+  border-bottom: 1px solid #808080;
+}
+
+.richeditor a:hover {
+  color: #175199;
+  border-bottom: 1px solid #175199;
+}
+
+.richeditor img {
+  margin: 1em 0;
 }

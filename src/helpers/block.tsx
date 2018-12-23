@@ -32,6 +32,7 @@ const onClickBlock = (
 type RenderNodeArg = {
   type: string;
   tagName: string;
+  attributes?: any;
 };
 
 type RenderNodeArgs = RenderNodeArg | RenderNodeArg[];
@@ -42,14 +43,18 @@ export function renderNode(args: RenderNodeArgs) {
     editor: CoreEditor,
     next: () => any
   ) {
-    const { children, node, attributes } = props;
+    const { children, node, attributes: propAttributes } = props;
 
     let argsArray = Array.isArray(args) ? args : [args];
 
     const arg = argsArray.find(({ type }) => type === (node as Block).type);
 
     if (arg) {
-      return React.createElement(arg.tagName, attributes, children);
+      return React.createElement(
+        arg.tagName,
+        { ...propAttributes, ...arg.attributes },
+        children
+      );
     } else {
       return next();
     }

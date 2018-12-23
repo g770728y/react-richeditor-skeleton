@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <div className={'container'}>
         <ReactRichEditor
+          className="richeditor"
           style={{ width: 500, height: 500, padding: '6px 12px' }}
         >
           {{

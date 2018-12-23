@@ -16,6 +16,7 @@ import LinkPlugin from './plugins/Link';
 import ImagePlugin from './plugins/Image';
 import MentionPlugin from './plugins/Mention';
 import { User } from './plugins/Mention/helper';
+import ParagraphPlugin from './plugins/Paragraph';
 
 const initialValue = Value.fromJSON(_initialValue);
 
@@ -50,6 +51,7 @@ export default class RichEditor extends React.Component<IProps, IState> {
     const { children } = this.props;
 
     this._plugins = [
+      ParagraphPlugin(),
       BoldPlugin(),
       ItalicPlugin(),
       HeadingPlugin(),
@@ -112,9 +114,9 @@ export default class RichEditor extends React.Component<IProps, IState> {
   };
 
   render() {
-    const { children, ...restProps } = this.props;
+    const { children, className, ...restProps } = this.props;
     return (
-      <div className={styles.container} {...restProps}>
+      <div className={`${styles.container} ${className}`} {...restProps}>
         <Editor
           autoFocus
           plugins={this.plugins}
