@@ -1,13 +1,13 @@
 {
-  "main.css": "/react-richeditor-skeleton/static/css/main.68f358dd.chunk.css",
-  "main.js": "/react-richeditor-skeleton/static/js/main.961dd7b5.chunk.js",
-  "main.js.map": "/react-richeditor-skeleton/static/js/main.961dd7b5.chunk.js.map",
-  "static/js/1.2d9b2d29.chunk.js": "/react-richeditor-skeleton/static/js/1.2d9b2d29.chunk.js",
-  "static/js/1.2d9b2d29.chunk.js.map": "/react-richeditor-skeleton/static/js/1.2d9b2d29.chunk.js.map",
+  "main.css": "/react-richeditor-skeleton/static/css/main.e708c373.chunk.css",
+  "main.js": "/react-richeditor-skeleton/static/js/main.0e5c6b86.chunk.js",
+  "main.js.map": "/react-richeditor-skeleton/static/js/main.0e5c6b86.chunk.js.map",
+  "static/js/1.bcfeee8c.chunk.js": "/react-richeditor-skeleton/static/js/1.bcfeee8c.chunk.js",
+  "static/js/1.bcfeee8c.chunk.js.map": "/react-richeditor-skeleton/static/js/1.bcfeee8c.chunk.js.map",
   "runtime~main.js": "/react-richeditor-skeleton/static/js/runtime~main.65801ee3.js",
   "runtime~main.js.map": "/react-richeditor-skeleton/static/js/runtime~main.65801ee3.js.map",
-  "static/css/main.68f358dd.chunk.css.map": "/react-richeditor-skeleton/static/css/main.68f358dd.chunk.css.map",
+  "static/css/main.e708c373.chunk.css.map": "/react-richeditor-skeleton/static/css/main.e708c373.chunk.css.map",
   "index.html": "/react-richeditor-skeleton/index.html",
-  "precache-manifest.4543205cded499d2f1d79a73e709b04a.js": "/react-richeditor-skeleton/precache-manifest.4543205cded499d2f1d79a73e709b04a.js",
+  "precache-manifest.770849e552029cd13950ba14049c34f2.js": "/react-richeditor-skeleton/precache-manifest.770849e552029cd13950ba14049c34f2.js",
   "service-worker.js": "/react-richeditor-skeleton/service-worker.js"
 }
